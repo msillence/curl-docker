@@ -110,5 +110,6 @@ USER curl_user
 # set entrypoint
 ###############################################################
 COPY "entrypoint.sh" "/entrypoint.sh"
+RUN chmod a+rx /entrypoint.sh
 CMD ["curl"]
 ENTRYPOINT ["/entrypoint.sh"]
